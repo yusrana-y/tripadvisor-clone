@@ -1,0 +1,295 @@
+#logo{
+    width: 230px;
+    padding-right: 40px;
+}
+#flogo{
+    width:30px;
+    margin-left: 40px;
+}
+
+
+.navSearch{
+    width: 40%;
+    height: 50px;
+    border: 1px solid grey;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    box-shadow: none;
+}
+
+@media screen and (max-width:992px){
+    .nava span{
+        display: none;
+    }
+    .navSearch{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:754px){
+    .nava span{
+        display: none;
+    }
+
+    .navSearch{
+        width: 70%;
+    }
+}
+
+
+#nav-btn{
+    color: rgb(255, 251, 251);
+    background-color: black;
+    border-radius: 22px;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+.navbar a{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#nav-btn:hover{
+    background-color:rgb(48, 47, 47);
+    
+}
+.nav1 a{
+    font-family: "Encode Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.nav2 a{
+    font-family: "Encode Sans", sans-serif;
+    font-size:14px ;
+    color: rgb(75, 74, 74);
+    font-weight: 500;
+}
+
+.nav1 li:hover{
+    color: rgb(145, 140, 140);
+    height: 35px;
+    border-radius: 18px;
+    background-color: rgb(236, 236, 228);
+}
+
+#lang{
+    display: inline;
+}
+
+.nav2 li:hover{
+  border-bottom: 1px solid black;
+}
+
+.hotel-homepage{
+    height: 500px;
+    width: 100%;
+    background-image: url(./media/homepage-hotel.jpg);
+    background-position: center center;
+    color: white;
+}
+
+
+    
+.hotel-homepage h1{
+    padding-top: 200px;
+}
+
+.hp-box{ 
+    margin-left: 50px;
+    display: flex;
+    height: 55px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+#hotelhp{
+    margin-top: 15px;
+    border: none;
+    height:30px;
+    width: 310px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    box-shadow: none;
+}
+
+.d-btn{
+    width: 170px;
+    padding: 9px;
+    border-radius: 20px;
+    margin-top:6px;
+    border: 1px solid rgb(202, 202, 202);
+    background-color: white;
+}
+.dp-btn{
+    border: none;
+    background-color: white;
+}
+
+.dp-div{
+    width: 100px;
+    height: 45px;
+    border: 1px solid rgb(202, 202, 202);
+    align-items: center;
+    border-radius: 25px;
+    margin-top:6px;
+    padding-left: 10px;
+}
+
+.hotel-btn{
+    width: 120px; 
+    background-color:rgb(52,224,161);
+    border: none;
+    
+}
+.person{
+    width: 110px;
+}
+
+#rating{
+    background-color:green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.rating-div{
+    display: grid;
+    grid-template-columns: 12px 12px 12px 12px 12px 100px;
+}
+
+.rating-div span{
+    margin-left: 15px;
+}
+
+.card img{
+    border-radius: 12px;
+    height: 250px;
+}
+
+.navtags a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+.navtags span{
+    margin-left: 40px;
+    color: rgb(130,132,130);
+}
+.navtags a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.footer{
+    background-color: rgb(250,241,237);
+}
+.footertext{
+    font-size: 12px;
+}
+
+.footernav a{
+    color: black;
+    font-size: 15px;
+
+}
+
+.button-div{
+    width: 170px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(189, 187, 187);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.dd{
+    padding-left: 85px;
+}
+
+.footer-div2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 30px;
+}
+
+
+
+
+
+.flights-hp{
+    width: 100%;
+    height: 80vh;
+    color: white;
+    background-image: url(./media/flights-hero.jpg);
+    background-position: center center;
+}
+
+.flights-hp h2{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.flights-ul li{
+    display: inline;
+    cursor: pointer;
+    padding: 12px;
+}
+.flights-ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-group img{
+    width: 110px;
+    height: auto;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 150px;
+}
+.card-body{
+    margin-top:20px;
+    text-align: center;
+
+}
+
+.card-title{
+    color: green;
+}
+
+.footer-body{
+    line-height: 1;
+    padding-top: 3px;
+}
+
+.flight-route{
+    border-radius: 6px;
+    font-size: 16px;
+    padding-top: 18px;
+    background-color:white;
+    height: 60px;
+    color: black;
+}
+@media (max-width:768px) {
+    .flights-hp h2{
+        padding-top: 60px;
+        font-size: 15px;
+    }
+
+    .flights-ul li{
+        padding: 20px;
+    }
+
+    .card-group{
+        display: none;
+    }
+
+    .flight-route{
+        display: none;
+    }
+}

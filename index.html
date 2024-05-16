@@ -1,0 +1,518 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS link-->
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dancing+Script:wght@400..700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Tripadvisor</title>
+</head>
+<body>
+ <!--Main Nav bar nav1-->
+  <nav class="navbar navbar-expand-lg navbar-light ms-2">
+    
+    <button type="button" 
+    class="navbar-toggler" 
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="navbar-brand nava mx-2">
+      <img src="./media/tripadvisor-removebg-preview.png"  class="d-inline-block" alt="logo" width="52px"><span>Tripadvisor</span>
+  </a>
+   <input class=" rounded-pill navSearch " type="search" placeholder="Search" aria-label="Search">
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav nav1">
+            <li class="nav-item ms-5 ">
+                <a href="#" class="nav-link active">Discover</a>
+            </li>
+            <li class="nav-item ms-3 ">
+                <a href="#" class="nav-link ">Trips</a>
+            </li>
+            <li class="nav-item ms-3 ">
+                <a href="#" class="nav-link ">Review</a>
+            </li>
+            <li class="nav-item mx-3 ">
+                <a href="#" class="nav-link ">USD</a>
+            </li>
+        </ul>
+        <button class="btn ms-4" id="nav-btn" type="button">Sign in</button>
+    </div>
+    
+  </nav>
+<!--Seconday Nav bar nav2-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav nav2">
+          <li class="nav-item ms-5">
+            <a class="nav-link " aria-current="page" href="index.html">Hotels</a>
+          </li>
+          <li class="nav-item  pe-2 ">
+            <a class="nav-link" href="#">Things to do</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="#">Restaurants</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="flights.html">Flights</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="#">Vacation Rentals</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="#">Cruises</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="#">Rental Cars</a>
+          </li>
+          <li class="nav-item pe-2">
+            <a class="nav-link" href="#">Forums</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+    
+    <!--HOME PAGE-->
+    <div class="hotel-homepage">
+
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h1><b>Latest reviews. Lowest prices.</b></h1>
+        </div>
+        <div class="col-3"></div>
+         
+      </div>
+  
+      <div class="row">
+  
+       <div class="col-2"></div>
+  
+       <div class="col-7 hp-box">
+          <div>
+              <input id="hotelhp" class="form-control me-2 rounded-pill"type="search" placeholder="Hotel name or destination" aria-label="Search"> 
+          </div>
+  
+  
+          <div style="display: flex; column-gap: 8px;">
+              <div>
+                  <button class="d-btn"><i class="fa-regular fa-calendar"></i><span> Enter Dates</span></button>
+              </div>
+           <div style="display: flex;" class="dp-div">
+              <div>
+                  <button class="dp-btn" ><i class="fa-solid fa-bed"></i><span> 1</span></button>
+              </div>
+              <div>
+                  <button class="dp-btn"><i class="fa-regular fa-user"></i><span> 2</span></button>
+              </div>
+           </div>
+           <div>
+              <button class="d-btn hotel-btn" >Find hotels</button>
+          </div>
+          </div>
+  
+       </div>
+  
+  
+       <div class="col-3"></div>
+      </div>
+    </div>
+  
+    <!--Traveler's top hotel choice-->
+    <div class="row pt-5 ps-5">
+      <div class="col-11">
+        <h2>Traveler's choice : Top hotels</h2>
+      </div>
+      <div class="col-1">
+        <a href="">see all</a>
+      </div>
+    </div>
+
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/rambagh-palace-exterior.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Rambagh Palace</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>6,979</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/ozen.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Ozen Reserve Bolifushi - Luxury All Inclusive</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>2,658</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/hotel-colline-de-france.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Hotel Colline de France</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>4,234</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/shangri-la-hotel-at-the.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Shangri-La The Shard, London</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>7,284</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <!--Traveler's top resort choice-->
+    <div class="row pt-5 ps-5">
+      <div class="col-11">
+        <h2>Traveler's choice : All inclusive Resorts</h2>
+      </div>
+      <div class="col-1">
+        <a href="">See all</a>
+      </div>
+    </div>
+
+    <div class="row px-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/ikos-dassia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Ikos Dassia</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>3,673</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/rixos-premium-belek.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Rixos Premium Belek - The Land Of Legends Access</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>10,813</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/discover-pure-paradise.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Voyage Sorgun</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>8,685</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/voyage-belek-golf-spa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Voyage Belek Golf And Spa</h6>
+            <div class="rating-div">
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <div id="rating"></div>
+              <span>13,661</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Hotels in top destinations-->
+    <div class="row pt-5 ps-5">
+      <div class="col-11">
+        <h2>Hotels in top destinations</h2>
+      </div>
+      <div class="col-1">
+        <a href="">See all</a>
+      </div>
+    </div>
+
+    <div class="row px-4">
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/scottsdale.jpg" class="card-img-top" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title">Scottsdale</h5>
+            <p class="card-text">Scottsdale has more spas per capita than any other city in the U.S.—so whether you're looking for the latest medi-spa technology or a new-agey, bohemian vibe, there's sure to be something for you. </p>
+            <a href="#" class="btn btn-dark rounded-pill px-5">Let's Go</a>
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/Fort lauderdale.jpg" class="card-img-top" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title">Fort Lauderdale</h5>
+            <p class="card-text">Fort Lauderdale's canals and charm have earned it the nickname “The Venice of America.” The beaches offer 23 miles of golden sand, lively with the spirited antics of happy vacationers.</p>
+            <a href="#" class="btn btn-dark rounded-pill px-5">Let's Go</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/key west.jpg" class="card-img-top" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title">Key West</h5>
+            <p class="card-text">Does time ever pass in the Florida Keys? Everyone and everything in Key West seems to go at its own pace, right down to the ice melting slooooowly in your margarita glass.</p>
+            <a href="#" class="btn btn-dark rounded-pill px-5 ">Let's Go</a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card border-0 ms-4 mt-3">
+          <img src="./media/miami.jpg" class="card-img-top" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title">Miami</h5>
+            <p class="card-text">Miami is hot hot hot! And it’s not just the sultry weather. Here, the nightlife is scorching, thanks to a strong Latin influence and spicy salsa culture. Dance the noche away in a nightclub, or indulge in a fancy meal at one of the city’s celebrity-owned restaurants.</p>
+            <a href="#" class="btn btn-dark rounded-pill px-5">Let's Go</a>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!--Hotel reviews: hotel near me-->
+    <div class="review-heading">
+      <div class="row pt-5 ps-5">
+        <h2>Hotel reviews: Hotels near me</h2>
+      </div>
+      <div class="row ps-5 pb-3">
+        <h5>Hotels in popular destinations — Find hotels & motels near you</h5>
+      </div>
+    </div>
+
+  <div class="row px-2">
+
+ 
+    <div class="col-md-4 col-sm-6 navtags">
+      <span>United States of America</span> <br>
+      <a href="">Atlanta Hotels</a> <br>
+      <a href="">Atlantic City Hotels</a> <br>
+      <a href="">Boston Hotels</a> <br>
+      <a href="">Chicago Hotels</a> <br>
+      <a href="">Dallas Hotels</a> <br>
+      <a href="">Disneyland - Anaheim Hotels</a> <br>
+      <a href="">Disneyland - Orlando Hotels</a> <br>
+      <a href="">Honolulu Hotels</a> <br>
+      <a href="">Key West Hotels</a> <br>
+      <a href="">Las Vegas Hotels</a> <br>
+      <a href="">Los Angeles Hotels</a> <br>
+      <a href="">Mauri Hotels</a> <br>
+      <a href="">Miami Hotels</a> <br>
+      <a href="">New Orleans Hotels</a> <br>
+      <a href="">New York City Hotels</a> <br>
+      <a href="">Philadelphia Hotels</a> <br>
+      <a href="">Phoenix Hotels</a> <br>
+      <a href="">San Diego Hotels</a> <br>
+      <a href="">Seattle Hotels</a> <br>
+      <a href="">Toronto Hotels</a> <br>
+      <a href="">Vancouver  Hotels</a>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 navtags">
+      <a href="">Washington DC Hotels</a> <br> <br>
+      <span>Europe</span> <br>
+      <a href="">Amsterdam Hotels</a> <br>
+      <a href="">Barcelona Hotels</a> <br>
+      <a href="">Berlin Hotels</a> <br>
+      <a href="">Dublin Hotels</a> <br>
+      <a href="">Florence Hotels</a> <br>
+      <a href="">Frankfurt Hotels</a> <br>
+      <a href="">London Hotels</a> <br>
+      <a href="">Madrid Hotels</a> <br>
+      <a href="">Munich Hotels</a> <br>
+      <a href="">Paris Hotels</a> <br>
+      <a href="">Rome Hotels</a> <br>
+      <a href="">Venice Hotels</a> <br> <br>
+
+      <span>Carribean/Mexico</span> <br>
+      <a href="">Cancun Hotels</a> <br>
+      <a href="">Dominican Republic Hotels</a> <br>
+      <a href="">Jamaica Hotels</a> <br>
+      <a href="">Mexico City Hotels</a> <br>
+      
+  
+
+    </div>
+    
+    <div class="col-md-4 col-sm-6 navtags">
+      
+      <a href="">Puerto Rico Hotels</a> <br>
+      <a href="">Punta Cana Hotels</a> <br> <br>
+
+      <span>ASIA/PACIFIC & AUSTRALIA</span> <br>
+      <a href="">Bali Hotels</a> <br>
+      <a href="">Bangkok Hotels</a> <br>
+      <a href="">Beijing Hotels</a> <br>
+      <a href="">Hongkong Hotels</a> <br>
+      <a href="">Singapore Hotels</a> <br>
+      <a href="">Sydney Hotels</a> <br>
+      <a href="">Tokyo Hotels</a> <br><br>
+
+
+      <span>AFRICA/MIDDLE EAST</span> <br>
+      <a href="">Dubai Hotels</a> <br>
+      <a href="">Sharm El Sheikh Hotels</a> <br><br>
+
+      <span>CENTRAL/SOUTH AMERICA</span> <br>
+      <a href="">Bueno Aires Hotels</a>
+
+    </div>
+  </div>
+
+  <!--HR-->
+
+  <hr>
+
+  <div class="navtags nav1 px-2">
+    <a href="">Hotels</a> <br>
+    <a href="">Things to do</a> <br>
+    <a href="">Restaurants</a> <br>
+    <a href="">Flights</a> <br>
+    <a href="">Vacation Rentals</a> <br>
+    <a href="">Cruise</a> <br>
+    <a href="">Rental Cars</a> <br>
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+
+    <div class="row mt-5">
+    <div class="col-md-8 col-sm-6"> 
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <img id="flogo" src="./media/tripadvisor-removebg-preview.png" alt="">
+        </div>
+        <div class="col-md-11 col-sm-12 ">
+          <p class="footertext">© 2024 Tripadvisor LLC All rights reserved. </p>
+          <div class="footernav">
+            <a href="">Terms of Use</a>
+            <a href="">Privacy and Cookies Statement</a>
+            <a href="">Cookies Consent</a> 
+            <a href="">Site Map</a> <br>
+            <a href="">How the Site Worls</a> 
+            <a href="">Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row footertext ms-5">
+        This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu.
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 footer-div2">
+      <div class="button-div">
+        <i class="fa-solid fa-dollar-sign ps-2"></i>
+        <span class=></span>USD</span>
+        <i class="fa-solid fa-angle-down dd"></i>
+      </div>
+      <div class="button-div">
+        <span class="ps-4"></span>U.S.</span>
+        <i class="fa-solid fa-angle-down dd"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
